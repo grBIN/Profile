@@ -1,0 +1,42 @@
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+@import "vendor/normalize";
+@import "vendor/smart-grid";
+@import "base/fonts";
+@import "base/general";
+@import "../blocks/blocks";
+
+//for test block
+body {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    // align-items: center;
+    padding: 50px;
+    // height: 100vh;
+    @include xs-block {
+        padding: 0;
+    }
+    //nice BG
+    background: linear-gradient(238deg, #1abc9c, #2ecc71, #3498db, #9b59b6, #34495e);
+    background-size: 1000% 1000%;
+    -webkit-animation: BackgroundForTest 37s ease infinite;
+    -moz-animation: BackgroundForTest 37s ease infinite;
+    animation: BackgroundForTest 37s ease infinite;
+    @-webkit-keyframes BackgroundForTest {
+        0%{background-position:0% 75%}
+        50%{background-position:100% 26%}
+        100%{background-position:0% 75%}
+    }
+    @-moz-keyframes BackgroundForTest {
+        0%{background-position:0% 75%}
+        50%{background-position:100% 26%}
+        100%{background-position:0% 75%}
+    }
+    @keyframes BackgroundForTest { 
+        0%{background-position:0% 75%}
+        50%{background-position:100% 26%}
+        100%{background-position:0% 75%}
+    }
+}

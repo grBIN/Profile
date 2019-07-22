@@ -1,0 +1,96 @@
+li {
+    margin-bottom: 10px;
+}
+.content {
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 20px;
+    position: relative;
+    &__photo {
+        border-radius: 20px;
+        float: right;
+        margin: 20px;
+        object-fit: cover;
+        object-position: right;
+        margin-top: 50px;
+
+    }
+    &__header {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px 10px 0px 0px;
+        position: relative;
+    }
+
+    &__title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__main {
+        padding: 20px;
+    }
+
+    &__family {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    &__exp {
+        margin-top: 20px;
+    }
+    &__skills li{
+        margin-top: 20px;
+    }
+
+    &__last-work ol{
+        margin-top: 10px;
+    }
+
+    &__data {
+        position: absolute;
+        right: 20px;
+        bottom: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    .xs-none {
+        display: none;
+    }
+
+    ol {
+        padding-left: 15px;
+    }
+
+    .content {
+        &__main {
+            padding: 5px;
+        }
+        &__header {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 0;
+        }
+        &__title {
+            margin: 10px;
+            padding: 0;
+            position: relative;
+            display: block;
+            transform: none;
+            left: 0;
+            top: 0;
+        }
+
+
+
+        &__photo {
+            width: 200px;
+            margin: 0;
+        }
+    }       
+}
