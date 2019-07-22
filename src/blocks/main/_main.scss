@@ -91,6 +91,8 @@ li {
         &__photo {
             width: 200px;
             margin: 0;
+            float: none;
+            display: block;
         }
     }       
 }
